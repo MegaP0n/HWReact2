@@ -1,0 +1,54 @@
+.movie, .actor {
+    background: #62e7d1;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.movie:hover, .actor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.movie h3, .actor h3 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.movie p, .actor p {
+    margin: 8px 0;
+    color: #272727;
+    line-height: 1.4;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 48px;
+}
+
+.app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+body {
+    background: linear-gradient(135deg, #020824 0%, #244e47 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.card-section {
+    background: #2f7468;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 48px;
+}
