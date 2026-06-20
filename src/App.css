@@ -8,6 +8,30 @@
     transition: transform 0.3s ease;
 }
 
+.card-high-rating {
+    border: 3px solid limegreen;
+}
+
+.card-mid-rating {
+    border: 3px solid yellow;
+}
+
+.card-low-rating {
+    border: 3px solid red;
+}
+
+.new-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    color: white;
+    animation: pulse 2s infinite;
+    white-space: nowrap;
+}
+
 .movie:hover, .actor:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
@@ -33,7 +57,7 @@
 }
 
 .app {
-    max-width: 600px;
+    max-width: 600  px;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -51,4 +75,17 @@ body {
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 48px;
+}
+
+.badge-oscar {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #1a2a2a;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    letter-spacing: 0.5px;
 }

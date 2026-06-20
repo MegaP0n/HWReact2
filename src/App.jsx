@@ -13,8 +13,8 @@ function App() {
       <CardSection 
         title="Фильмы" 
         subtitle="Лучшие фильмы всех времен">
-        {movies.map((movie) => (
-          <MovieCard
+        {movies.map((movie, index) => (
+          <MovieCard key={movie.id}
             title={movie.title}
             year={movie.year}
             country={movie.country}
@@ -30,14 +30,15 @@ function App() {
       <CardSection 
         title="Актеры" 
         subtitle="Талантливые исполнители">
-        {actors.map((actor) => (
-          <ActorCard
+        {actors.map((actor, index) => (
+          <ActorCard key={actor.id}
             name={actor.name}
             role={actor.role}
             movie={actor.movie}
             experience={actor.experience}
             skills={actor.skills}
             isLead={actor.isLead}
+            isOscarWinner={actor.isOscarWinner}
           />
         ))}
       </CardSection>
